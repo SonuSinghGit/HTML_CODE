@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evoting.gov.in</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <style> 
+    #log
+    {
+        
+        text-align: center;
+        width: 96.8%;
+        padding: 7px;
+        height: 50%;
+        background-color: rgb(231, 164, 83);
+        border-radius: 2px;
+        font-family: cursive;
+
+    } 
+    #bodys
+    {
+        border: 1px solid black;
+        width:27% ;
+        height: 390px;
+        background-color: #fcd683;
+        margin-left: 16%;
+        border-radius: 3px;
+        margin-top:7%;
+        border: none;
+        
+        }
+
+    ::placeholder
+    {
+        color: black;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="bodysec">
+    <div id="headersec">
+    <div id="logo1" style="background-image:url(/images/logo3.png);"></div>
+    <h1>Online Voting System</h1> 
+    <hr>
+    </div>
+
+    <div id="logo" style="background-image:url(/images/logo4.1.png);"></div>
+    <br>
+
+    <div id="bodys">
+        <form action="api/login.php" method="POST">
+            <div id="log">
+            <h2>Login</h2>
+            </div><br>
+            <div id="input">
+            <input type="phone" name="mobile" placeholder="Enter mobile"><br><br>
+            <input type="password" name="password" placeholder="Enter password"><br><br>
+            <br><select name="role" id="dropbox">
+                <option value="select" selected>Select Role</option>
+                <option value="voter">Voter</option>
+                <option value="party">Party</option>
+            </select>
+            <br><br>
+            </div>
+            <button id="loginbtn" type="submit">Login</button><br><br>
+            New user?<a href="pages/register.html">Register here</a>
+        </form>
+    </div> 
+</body>
+</html>
